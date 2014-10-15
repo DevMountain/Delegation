@@ -12,8 +12,8 @@
 		71BF975919EE147E00650D8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BF975819EE147E00650D8F /* ViewController.m */; };
 		71BF975C19EE147E00650D8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71BF975A19EE147E00650D8F /* Main.storyboard */; };
 		71BF975E19EE147E00650D8F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71BF975D19EE147E00650D8F /* Images.xcassets */; };
-		71BF976119EE147E00650D8F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71BF975F19EE147E00650D8F /* LaunchScreen.xib */; };
 		71BF976D19EE147E00650D8F /* DelegationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BF976C19EE147E00650D8F /* DelegationTests.m */; };
+		71BF977819EE15D100650D8F /* DrawerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BF977719EE15D100650D8F /* DrawerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +36,11 @@
 		71BF975819EE147E00650D8F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		71BF975B19EE147E00650D8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71BF975D19EE147E00650D8F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		71BF976019EE147E00650D8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		71BF976619EE147E00650D8F /* DelegationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DelegationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BF976B19EE147E00650D8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71BF976C19EE147E00650D8F /* DelegationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegationTests.m; sourceTree = "<group>"; };
+		71BF977619EE15D100650D8F /* DrawerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerView.h; sourceTree = "<group>"; };
+		71BF977719EE15D100650D8F /* DrawerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +86,10 @@
 				71BF975519EE147E00650D8F /* AppDelegate.m */,
 				71BF975719EE147E00650D8F /* ViewController.h */,
 				71BF975819EE147E00650D8F /* ViewController.m */,
+				71BF977619EE15D100650D8F /* DrawerView.h */,
+				71BF977719EE15D100650D8F /* DrawerView.m */,
 				71BF975A19EE147E00650D8F /* Main.storyboard */,
 				71BF975D19EE147E00650D8F /* Images.xcassets */,
-				71BF975F19EE147E00650D8F /* LaunchScreen.xib */,
 				71BF975019EE147E00650D8F /* Supporting Files */,
 			);
 			path = Delegation;
@@ -200,7 +202,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				71BF975C19EE147E00650D8F /* Main.storyboard in Resources */,
-				71BF976119EE147E00650D8F /* LaunchScreen.xib in Resources */,
 				71BF975E19EE147E00650D8F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +223,7 @@
 				71BF975919EE147E00650D8F /* ViewController.m in Sources */,
 				71BF975619EE147E00650D8F /* AppDelegate.m in Sources */,
 				71BF975319EE147E00650D8F /* main.m in Sources */,
+				71BF977819EE15D100650D8F /* DrawerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,14 +252,6 @@
 				71BF975B19EE147E00650D8F /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		71BF975F19EE147E00650D8F /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				71BF976019EE147E00650D8F /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -343,6 +337,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Delegation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Delegation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
